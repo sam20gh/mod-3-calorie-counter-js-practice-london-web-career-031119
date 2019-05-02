@@ -52,16 +52,16 @@
 
     <!-- The right DIV containing features pertaining to calorie entries -->
     <div class="uk-width-1-2 uk-card uk-card-default uk-padding uk-margin-left">
-      <form id="new-calorie-form">
+      <form id="add-calorie-form">
         <h3>Record calorie intake:</h3>
         <div>
-          <div class="uk-margin-small">
-            <input type="number" class="uk-input" min="0" placeholder="Calories (kcal)">
+          <div id="form-calorie" class="uk-margin-small">
+            <input type="number" class="uk-input" min="0" placeholder="Calories (kcal)" >
           </div>
-          <div class="uk-margin-small">
+          <div id="form-note" class="uk-margin-small">
             <textarea type="text" class="uk-textarea" placeholder="Notes" style="resize:none"></textarea>
           </div>
-          <button class="uk-button uk-button-default">Add Calorie Intake</button>
+          <button id="create-food"class="uk-button uk-button-default">Add Calorie Intake</button>
         </div>
       </form>
 
@@ -74,16 +74,16 @@
   <div id="edit-form-container" uk-modal>
     <div class="uk-modal-dialog uk-modal-body">
       <button class="uk-modal-close-default" type="button" uk-close></button>
-      <form id="new-calorie-form">
+      <form id="edit-calorie-form">
         <h3>Edit calorie intake:</h3>
         <div>
           <div class="uk-margin-small">
-            <input type="number" class="uk-input" min="0" placeholder="Calories (kcal)">
+            <input name="calorie" type="number" class="uk-input" min="0" placeholder="Calories (kcal)" >
           </div>
           <div class="uk-margin-small">
-            <textarea type="text" class="uk-textarea" placeholder="Notes" style="resize:none"></textarea>
+            <textarea name="note" type="text" class="uk-textarea" placeholder="Notes" style="resize:none" ></textarea>
           </div>
-          <button class="uk-button uk-button-default">Update Entry</button>
+          <button id="update_item" class="uk-button uk-button-default">Update Entry</button>
         </div>
       </form>
     </div>

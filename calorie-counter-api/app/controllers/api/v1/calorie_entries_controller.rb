@@ -46,6 +46,8 @@ class Api::V1::CalorieEntriesController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def api_v1_calorie_entry_params
-      params.require(:api_v1_calorie_entry).permit(:calorie, :note)
+      params.require(:calorie_entry).permit(:calorie, :note)
+      # {calorie_entry: {calorie: 123, note: 'note'}}
+      # {calorie: 123, note: 'note'}
     end
 end
